@@ -1,0 +1,23 @@
+2025-07-20 15:06:39,258 - FAILURE: near "1": syntax error
+2025-07-20 15:11:25,498 - FAILURE: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-21 19:05:31,419 - No record found
+2025-07-21 19:07:02,988 - FAILURE:invalid literal for int() with base 10: '102 , Title=DSA, Author=William, Genre=Tech, YearPublished=2021'
+2025-07-21 19:07:33,316 - No record found
+2025-07-21 19:11:26,846 - No record found
+2025-07-21 19:13:29,286 - FAILURE:list index out of range
+2025-07-21 19:14:27,442 - FAILURE:list index out of range
+2025-07-21 22:11:12,611 - FAILURE:'socket' object has no attribute 'commit'
+2025-07-21 22:11:39,673 - 1|BOOKS|BookID=101, Title=XYZ, Author=ABC, Genre=Tech, YearPublished=1999
+2025-07-21 22:12:17,505 - FAILURE:invalid literal for int() with base 10: 'BookID=102 , Title=DSA, Author=William, Genre=Tech, YearPublished=2021'
+2025-07-21 22:12:37,881 - FAILURE:'socket' object has no attribute 'commit'
+2025-07-21 22:12:51,621 - FAILURE:invalid literal for int() with base 10: 'BookID=102'
+2025-07-21 22:13:02,580 - 1|BOOKS|BookID=102, Title=DSA, Author=William, Genre=Tech, YearPublished=2021
+2025-07-21 22:19:38,515 - FAILURE: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-21 22:28:58,520 - 
+2025-07-21 22:29:27,183 - FAILURE: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-21 22:30:08,356 - FAILURE:list index out of range
+2025-07-21 22:30:22,415 - No record found
+2025-07-21 22:35:50,570 - FAILURE:list index out of range
+2025-07-21 22:43:37,924 - SUCCESS
+2025-07-21 22:43:45,072 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-21 22:43:57,188 - SUCCESS
