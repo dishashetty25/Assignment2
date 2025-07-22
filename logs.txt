@@ -21,3 +21,71 @@
 2025-07-21 22:43:37,924 - SUCCESS
 2025-07-21 22:43:45,072 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
 2025-07-21 22:43:57,188 - SUCCESS
+2025-07-22 11:24:54,765 - SUCCESS
+2025-07-22 11:24:59,962 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 11:26:46,579 - SUCCESS
+2025-07-22 11:27:15,149 - 1|BORROWERS|BorrowerID=None, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 11:27:46,059 - SUCCESS
+2025-07-22 11:28:10,358 - SUCCESS
+2025-07-22 11:28:16,611 - 1|BORROWERS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 11:39:20,964 - FAILURE: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-22 11:39:32,063 - FAILURE: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-22 11:39:49,299 - SUCCESS
+2025-07-22 11:39:58,007 - No record found
+2025-07-22 11:40:22,714 - SUCCESS
+2025-07-22 11:40:26,847 - No record found
+2025-07-22 11:54:49,270 - 1|BORROWERS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 11:54:58,191 - 1|BORROWERS|BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7839562809, BookID=101
+2025-07-22 12:07:29,364 - No record found
+2025-07-22 12:08:29,725 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:08:45,305 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:09:00,890 - 1|BORROWERS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 12:09:10,627 - 1|BOOKS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 12:13:40,245 - 1|BOOKS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 12:13:48,281 - 1|BORROWERS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 12:13:53,660 - 1|BOOKS|BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+2025-07-22 12:14:02,110 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:16:02,259 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:18:51,753 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:19:34,312 - SUCCESS
+2025-07-22 12:19:48,603 - 1|BOOKS|BookID=102, Title=DSA, Author=James, Genre=Tech, YearPublished=1990
+2025-07-22 12:20:12,650 - SUCCESS
+2025-07-22 12:20:20,632 - 1|BORROWERS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:21:06,231 - SUCCESS
+2025-07-22 12:21:10,562 - 1|BORROWERS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:22:29,407 - No record found
+2025-07-22 12:22:36,716 - 1|BORROWERS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:36:27,330 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:37:29,255 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:37:47,409 - 1|BORROWERS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:44:17,269 - FAILURE: UNIQUE constraint failed: BOOKS.BookID
+2025-07-22 12:44:27,838 - 1|BORROWERS|
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7839562809, BookID=101
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7849208910, BookID=101
+2025-07-22 12:44:43,051 - FAILURE:list index out of range
+2025-07-22 12:44:56,717 - FAILURE:list index out of range
+2025-07-22 12:49:29,032 - FAILURE: Record not found.
+2025-07-22 12:49:43,516 - FAILURE: FOREIGN KEY constraint failed
+2025-07-22 12:50:21,814 - 1|BORROWERS|
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7839562809, BookID=101
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=6793450299, BookID=101
+BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7849208910, BookID=101
+2025-07-22 12:50:33,478 - FAILURE: Record not found.
+2025-07-22 12:50:47,458 - SUCCESS
+2025-07-22 12:50:54,030 - SUCCESS
+2025-07-22 12:50:59,773 - FAILURE: Record not found.
+2025-07-22 12:51:07,601 - SUCCESS
+2025-07-22 12:51:14,512 - No borrower found for that BookID
+2025-07-22 12:52:52,604 - 1|BOOKS|BookID=102, Title=DSA, Author=James, Genre=Tech, YearPublished=1990
+2025-07-22 12:53:20,684 - SUCCESS
+2025-07-22 12:53:34,514 - 1|BOOKS|BookID=101, Title=Python, Author=William, Genre=Tech, YearPublished=2000
+2025-07-22 12:53:49,794 - SUCCESS
+2025-07-22 12:54:56,374 - SUCCESS
+2025-07-22 12:55:05,469 - 1|BORROWERS|
+BorrowerID=202, Name=Suresh, Email=suresh@gmail.com, Phone=7849208910, BookID=101
+BorrowerID=201, Name=Ramesh, Email=ramesh@gmail.com, Phone=5937602690, BookID=101

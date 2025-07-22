@@ -16,7 +16,7 @@ cursor.execute('''
 
 cursor.execute('''
                create table if not exists BORROWERS(
-                   BorrowerID integer,
+                   BorrowerID integer primary key,
                    Name text,
                    Email text,
                    Phone integer,
@@ -26,16 +26,34 @@ cursor.execute('''
 
 def actionSelect(tablename, id):
     try:
-        cursor.execute(f"SELECT * FROM {tablename} WHERE BookID = ?", (id,))
-        result = cursor.fetchone()
-        if result:
-            column_names = [description[0] for description in cursor.description]
-            record_parts = [f"{col}={val}" for col, val in zip(column_names, result)]
-            return f"1|{tablename}|" + ", ".join(record_parts)
+        if tablename.upper() == "BOOKS":
+            cursor.execute("SELECT * FROM BOOKS WHERE BookID = ?", (id,))
+            result = cursor.fetchone()
+            if result:
+                column_names = [description[0] for description in cursor.description]
+                record_parts = [f"{col}={val}" for col, val in zip(column_names, result)]
+                return f"1|{tablename}|" + ", ".join(record_parts)
+            else:
+                return "No record found"
+
+        elif tablename.upper() == "BORROWERS":
+            cursor.execute("SELECT * FROM BORROWERS WHERE BookID = ?", (id,))
+            results = cursor.fetchall()
+            if results:
+                column_names = [description[0] for description in cursor.description]
+                all_records = []
+                for result in results:
+                    record_parts = [f"{col}={val}" for col, val in zip(column_names, result)]
+                    all_records.append(", ".join(record_parts))
+                return f"1|{tablename}|\n" + "\n".join(all_records)
+            else:
+                return "No borrower found for that BookID"
+
         else:
-            return "No record found"
+            return "FAILURE: Invalid table"
     except sqlite3.Error as e:
         return f"FAILURE: {e}"
+
 
 def actionInsert(tablename, kwargs):
     try:
@@ -51,7 +69,8 @@ def actionInsert(tablename, kwargs):
     
 def actionDelete(tablename, id):
     try:
-        cursor.execute(f"DELETE FROM {tablename} WHERE BookID = ?", (id,))
+        id_column = "BookID" if tablename.upper() == "BOOKS" else "BorrowerID"
+        cursor.execute(f"DELETE FROM {tablename} WHERE {id_column} = ?", (id,))
         conn.commit()
         return "SUCCESS" if cursor.rowcount > 0 else "FAILURE: Record not found."
     except sqlite3.Error as e:
